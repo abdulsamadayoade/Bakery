@@ -122,7 +122,7 @@ header {
     top: 0;
     left: 0;
     width: 80%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--main-font-color-dark);
     padding: 4.4rem;
     display: flex;
@@ -452,7 +452,6 @@ footer .asterisk {
     max-width: 25rem;
     padding: 1rem;
     border: none;
-    border-radius: .4rem;
     outline: none;
 }
 
@@ -463,11 +462,14 @@ footer .asterisk {
     color: var(--main-font-color-dark);
     font-size: 1.6rem;
     padding: 1px .6rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 20.5rem;
     outline: none;
+}
+
+.newsletter-form-box {
+    background-color: var(--white-color);
+    border-radius: .4rem;
+    display: flex;
+    overflow-x: hidden;
 }
 
 
@@ -570,10 +572,6 @@ footer .asterisk {
 
     .social-icons i {
         opacity: 1;
-    }
-
-    .newsletter-btn {
-        margin-left: 17.5rem;
     }
 }
 
