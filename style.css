@@ -395,10 +395,6 @@ footer {
     animation-iteration-count: infinite;
 }
 
-.footer-content {
-    /* overflow: hidden; */
-}
-
 .footer__content h4 {
     font-size: 1.9rem;
     font-weight: 100;
@@ -491,7 +487,7 @@ footer .asterisk {
     .nav-list {
         position: initial;
         width: initial;
-        height: initial;
+        min-height: initial;
         background-color: transparent;
         padding: 0;
         justify-content: initial;
