@@ -477,6 +477,7 @@ footer .asterisk {
 
 .reservation__form input,
 .reservation__form select {
+    background: transparent;
     border: 1px solid var(--secondary-font-color);
     margin-bottom: 3rem;
     padding: 1.8rem 2rem;
@@ -499,6 +500,10 @@ footer .asterisk {
 
 .submit__reservation:hover {
     border: 1px solid var(--secondary-font-color);
+}
+
+.margin-bottom {
+    margin-bottom: 5rem;
 }
 
 
@@ -567,7 +572,7 @@ footer .asterisk {
 .contact {
     background-attachment: fixed;
     min-height: 100vh;
-    padding-top: 30rem;
+    padding-top: 32rem;
     margin-bottom: 20rem;
 }
 
