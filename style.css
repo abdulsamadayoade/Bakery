@@ -31,6 +31,7 @@ body {
 
 section {
     padding: 3.9rem 0;
+    overflow: hidden;
 }
 
 img {
@@ -375,6 +376,10 @@ footer {
     animation-iteration-count: infinite;
 }
 
+.footer__content {
+    overflow: hidden;
+}
+
 .footer__content h4 {
     font-size: 1.9rem;
     font-weight: 100;
@@ -564,59 +569,6 @@ footer .asterisk {
     display: none;
 }
 
-
-/*                    CONTACT PAGE                      */
-
-/* CONTACT SECTION */
-
-.contact {
-    background-attachment: fixed;
-    min-height: 100vh;
-    padding-top: 32rem;
-    margin-bottom: 20rem;
-}
-
-.contact__row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-info {
-    width: 100%;
-    background-color: var(--white-color);
-    padding: 3rem 2rem;
-    border-radius: .5rem;
-    margin-bottom: 5rem;
-    text-align: center;
-}
-
-.contact-info i {
-    color: var(--secondary-font-color);
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-.contact-info h4 {
-    font-size: 2rem;
-    margin: 1rem 0 .5rem;
-    letter-spacing: 1px;
-    color: var(--main-font-color-dark);
-}
-
-.contact-info a {
-    color: var(--body-font-color);
-    transition: color .5s;
-}
-
-.contact-info a:hover {
-    color: var(--secondary-font-color);
-}
-
-.contact-info p {
-    line-height: 1.6;
-}
-
 /*                         MEDIA QUERIES                  */
 
 @media screen and (min-width: 900px) {
@@ -677,6 +629,10 @@ footer .asterisk {
 
     .headline {
         font-size: 4.7rem;
+    }
+
+    .story-img {
+        max-width: 40rem;
     }
 
     .row {
@@ -747,21 +703,6 @@ footer .asterisk {
         display: block;
     }
 
-}
-
-@media screen and (min-width: 1100px) {
-    .contact__row {
-        flex-direction: row;
-    }
-
-    .contact {
-        padding-top: 0;
-        margin-bottom: 0;
-    }
-
-    .contact-info:not(:last-child) {
-        margin-right: 2rem;
-    }
 }
 
 /*          ANIMATIONS           */
