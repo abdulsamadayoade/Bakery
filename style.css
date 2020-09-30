@@ -77,8 +77,14 @@ header {
 }
 
 .logo {
-    width: 80px;
-    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    transition: color .4s;
+}
+
+.logo:hover {
+    color: var(--secondary-font-color);
 }
 
 .menu-toggle {
@@ -451,6 +457,17 @@ footer .asterisk {
     border-radius: .4rem;
     display: flex;
     overflow-x: hidden;
+}
+
+.copyright a {
+    color: var(--white-color);
+    padding: .3rem 0;
+    border-bottom: 1px solid var(--white-color);
+    transition: border-bottom .5s;
+}
+
+.copyright a:hover {
+    border-bottom: 1px solid transparent;
 }
 
 
