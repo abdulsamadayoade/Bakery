@@ -458,6 +458,11 @@ footer .asterisk {
     overflow-x: hidden;
 }
 
+.copyright {
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+
 .copyright a {
     color: var(--white-color);
     padding: .3rem 0;
