@@ -355,7 +355,7 @@ h1.headline {
 footer {
     background-color: var(--dark-bg);
     color: var(--white-color);
-    padding: 7.9rem 0;
+    padding: 7rem 0 5rem;
     position: relative;
     text-align: center;
 }
@@ -462,18 +462,6 @@ footer .asterisk {
     margin-top: 2rem;
     padding: 2rem 0;
 }
-
-.copyright a {
-    color: var(--white-color);
-    padding: .3rem 0;
-    border-bottom: 1px solid var(--white-color);
-    transition: border-bottom .5s;
-}
-
-.copyright a:hover {
-    border-bottom: 1px solid transparent;
-}
-
 
 /*                    ABOUT PAGE                      */
 
