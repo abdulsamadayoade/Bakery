@@ -2,7 +2,7 @@
  
  <img src="images/screenshot.jpg" alt="project">
 
-Bakery is a simple and clean template built for a bakery.
+Bakery is a mobile first, clean and responsive template built for a bakery.
 
 Built using HTML, CSS and Javascript.
 
@@ -18,11 +18,5 @@ The project contains three pages which are:
 
 3. Bakers - This page contains a gallery of the bakers.
 
-Fonts Used
-
-1. Cabin
-2. Source Sans
-3. Herr Von Muellerhoff
-4. PoiretOne
 
 Live Url = https://abdulsamadayoade.github.io/Bakery
