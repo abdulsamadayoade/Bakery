@@ -10,6 +10,15 @@ menuToggler.addEventListener('click', function () {
     body.classList.toggle('show');
 });
 
+// CLOSE THE NAV WHEN NAVLNKS ARE CLICKED
+let navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+        body.classList.remove('show');
+    })
+})
+
 // SCROLL REVEAL
 window.sr = ScrollReveal();
 
