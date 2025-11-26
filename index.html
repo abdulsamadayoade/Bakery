@@ -198,15 +198,19 @@
                     </div>
                     <div class="newsletter-container">
                         <h4>Newsletter</h4>
-                        <form action="" class="newsletter-form">
-                            <div class="newsletter-form-box">
-                                <input type="text" class="newsletter-input" placeholder="Your email address...">
-                                <button class="newsletter-btn" type="submit">
-                                    <i class="fas fa-envelope"></i>
-                                </button>
-                            </div>
+                        <form action="" class="newsletter-form" id="newsletterForm">
+                          <div class="newsletter-form-box">
+                            <input type="email" class="newsletter-input" placeholder="Your email address..." required>
+                            <button class="newsletter-btn" type="submit">
+                              <i class="fas fa-envelope"></i>
+                            </button>
+                          </div>
                         </form>
-                    </div>
+                        <!-- Success Message -->
+                        <p class="success-message" id="successMessage" style="color: green; margin-top: 10px; display: none;">
+                          Thank you for subscribing! You'll receive our latest updates soon.
+                        </p>
+                      </div>
                 </div>
             </div>
         </div>
