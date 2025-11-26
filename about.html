@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Bakery</title>
-    <script src="js/app.js" defer></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap"
-        rel="stylesheet">
+
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ScrollReveal for Animations -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Custom Scripts -->
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -19,76 +27,66 @@
     <header>
         <div class="container">
             <nav class="navbar">
+                <!-- Menu Toggle for Mobile -->
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                     <i class="fas fa-times"></i>
                 </div>
+                <!-- Logo -->
                 <a href="index.html" class="logo">Bakery</a>
+                <!-- Navigation Links -->
                 <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link active">About Us</a>
-                    </li>
-                    <li class=" nav-item">
-                        <a href="about.html#reservation" class="nav-link">Reservation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="bakers.html" class="nav-link">Bakers</a>
-                    </li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li><a href="about.html#reservation" class="nav-link">Reservation</a></li>
+                    <li><a href="bakers.html" class="nav-link">Bakers</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-
     <section class="hero small-size-hero" id="hero">
+        <!-- Hero content can be added dynamically -->
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTIONS -->
     <section class="about">
         <div class="container">
             <div class="row">
+                <!-- About Description -->
                 <div class="description padding-right animate-left">
                     <div class="global-headline">
-                        <h2 class="sub-headline">
-                            Read
-                        </h2>
+                        <h2 class="sub-headline">Read</h2>
                         <h3 class="headline headline-dark">Our Story</h3>
                         <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis harum, deserunt repellendus culpa
-                        animi minus similique
-                        blanditiis repudiandae nisi, explicabo</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic veritatis perferendis molestias
-                        eius velit repellendus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum, deserunt repellendus culpa animi minus similique blanditiis repudiandae nisi, explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veritatis perferendis molestias eius velit repellendus.</p>
                 </div>
+                <!-- About Image -->
                 <div class="image animate-right">
-                    <img class="animate-top" src="images/about-img-2.jpeg" alt="bread">
+                    <img src="images/about-img-2.jpeg" alt="Delicious Bread">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
     <section class="about">
         <div class="container">
             <div class="row">
+                <!-- About Image -->
                 <div class="image padding-right margin-bottom animate-left">
-                    <img src="images/about-img-1.jpeg" alt="bread">
+                    <img src="images/about-img-1.jpeg" alt="Fresh Bread">
                 </div>
+                <!-- About Description -->
                 <div class="description animate-right">
                     <div class="global-headline">
-                        <h2 class="sub-headline">
-                            Bread
-                        </h2>
+                        <h2 class="sub-headline">Bread</h2>
                         <h3 class="headline headline-dark">So Good</h3>
                         <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum dolor earum
-                        accusamus suscipit. Officia atque vitae excepturi deserunt nihil?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum dolor earum accusamus suscipit. Officia atque vitae excepturi deserunt nihil?</p>
                 </div>
             </div>
         </div>
@@ -102,16 +100,16 @@
                 <form action="#" class="reservation__form">
                     <select name="persons">
                         <option>1 Person</option>
-                        <option>2 Person</option>
-                        <option>3 Person</option>
-                        <option>4 Person</option>
-                        <option>5 Person</option>
-                        <option>6 Person</option>
-                        <option>7 Person</option>
+                        <option>2 Persons</option>
+                        <option>3 Persons</option>
+                        <option>4 Persons</option>
+                        <option>5 Persons</option>
+                        <option>6 Persons</option>
+                        <option>7 Persons</option>
                     </select>
-                    <input type="date" class="reservation__date">
-                    <input type="time" class="reservation__time">
-                    <button class="btn btn-primary submit__reservation">Book Now</button>
+                    <input type="date" class="reservation__date" required>
+                    <input type="time" class="reservation__time" required>
+                    <button class="btn btn-primary submit__reservation" type="submit">Book Now</button>
                 </form>
             </div>
         </div>
@@ -120,47 +118,35 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
+            <!-- Back to Top -->
             <div class="back-to-top">
                 <a href="#hero"><i class="fas fa-chevron-up"></i></a>
             </div>
             <div class="footer__content">
+                <!-- About Footer Section -->
                 <div class="footer__content-about animate-top">
                     <h4>About Bakery</h4>
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde accusantium sit repudiandae
-                        incidunt quod eius recusandae blanditiis voluptates consectetur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde accusantium sit repudiandae incidunt quod eius recusandae blanditiis voluptates consectetur?</p>
                 </div>
+                <!-- Social Media & Newsletter -->
                 <div class="footer__content-divider animate-bottom">
+                    <!-- Social Media Links -->
                     <div class="social-media">
                         <h4>Follow Us</h4>
                         <ul class="social-icons">
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-pinterest"></i>
-                                </a>
-                            </li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                         </ul>
                     </div>
+                    <!-- Newsletter Subscription -->
                     <div class="newsletter-container">
                         <h4>Newsletter</h4>
-                        <form action="" class="newsletter-form">
+                        <form action="#" class="newsletter-form">
                             <div class="newsletter-form-box">
-                                <input type="text" class="newsletter-input" placeholder="Your email address...">
+                                <input type="email" class="newsletter-input" placeholder="Your email address..." required>
                                 <button class="newsletter-btn" type="submit">
                                     <i class="fas fa-envelope"></i>
                                 </button>
